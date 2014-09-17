@@ -8,8 +8,8 @@ public class CustomSimpleNoUnderscoreNaming extends DefaultNaming {
 	@Override
 	public String getName(Mapping context, final String draftName) {
 		String name = super.getName(context, draftName);
-		if (name.startsWith("_")){
-			return "_" + name.replace("_", "");
+		if (name.endsWith("_")){
+			return name.replace("_", "") + "_" ;
 		} else {
 			return name.replace("_", "");
 		}
