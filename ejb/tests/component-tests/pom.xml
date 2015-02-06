@@ -50,9 +50,9 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <extension>true</extension>
-                </configuration>
+                    <configuration>
+		    					<variant>jpa2</variant>
+				</configuration>
             </plugin>
             <plugin>
                 <inherited>true</inherited>
