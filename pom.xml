@@ -12,6 +12,9 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
 	<issueManagement>
 		<system>GitHub Issues</system>
 		<url>https://github.com/highsource/hyperjaxb3/issues</url>
