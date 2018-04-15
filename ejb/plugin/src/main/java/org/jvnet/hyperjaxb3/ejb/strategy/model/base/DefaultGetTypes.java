@@ -39,7 +39,7 @@ public class DefaultGetTypes<C> implements GetTypes<C> {
 		if (ID.IDREF.equals(id)) {
 			if (parent instanceof CClassInfo) {
 				final CClassInfo parentClassInfo = (CClassInfo) parent;
-				final String fullName = baseType.fullName();
+				final String fullName = (baseType == null ? null : baseType.fullName());
 				for (CClassInfo possibleClassInfo : parentClassInfo.model
 						.beans().values()) {
 					final String possibleFullName = possibleClassInfo
